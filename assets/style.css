@@ -1,10 +1,3 @@
-img {
-    width: 20px;
-    margin: 20px 0 0 20px;
-    position: absolute;
-    z-index: 1;
-}
-
 input {
     background: #0066ff;
     border: none;
@@ -42,13 +35,18 @@ h2 {
     margin: 0;
     margin-bottom: 24px;
 }
-
+.inp::after {
+    content: "\f002";
+    font-family: "FontAwesome";
+    color: #fff;
+    margin-left: -40px;
+}
 
 .inp:before {
     content: "";
-    width: 55px;
-    height: 55px;
-    border: 4px solid #0066FF;
+    width: 53px;
+    height: 53px;
+    border: 4px solid rgb(29, 93, 189);
     position: absolute;
     border-radius: 50px;
     animation: grow .8s infinite;
