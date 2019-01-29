@@ -1,0 +1,66 @@
+img {
+    width: 20px;
+    margin: 20px 0 0 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+input {
+    background: #0066ff;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 9;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    transition: .3s ease;
+}
+
+input:focus {
+    outline: none;
+}
+input::placeholder{
+    color: #8fbafc;
+}
+
+body {
+    background: #222;
+    display: grid;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+}
+
+h2 {
+    color: #fff;
+    font-size: 42px;
+    font-family: "poppins";
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+
+.inp:before {
+    content: "";
+    width: 55px;
+    height: 55px;
+    border: 4px solid #0066FF;
+    position: absolute;
+    border-radius: 50px;
+    animation: grow .8s infinite;
+    z-index: -1;
+}
+
+@keyframes grow{
+    from{
+        transform: scale(1.0)
+    }
+    to{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
